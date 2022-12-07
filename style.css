@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+body { 
+  background-color:hsl(30, 38%, 92%);
+  margin: 50px 300px;
+  font-family: Monserrat;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 446px;
+  border-radius:50px;
+  margin: auto;
+  
+}
+.content-container{
+  background-color:white;
+  width: 300px;
+  height:446px;
+  border-top-right-radius:20px;
+  border-bottom-right-radius:20px;
+   
+  
+}
+.content{
+  margin: 10px 30px;
+   width: 300px;
+  height:446px;
+}
+img{
+  width: 300px;
+  height: 446px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius:20px;
+}
+h1{
+  font-size:35px;
+  margin-right:100px;
+}
+h3{
+ opacity:0.3; 
+}
+p {
+  font-size: 14px;
+  font-family: montserrat;
+  font-weight: 700px;
+  margin-right:100px;
+  opacity: 0.4;
+  
+}
+.price{
+  display: flex;
+  align-content: center;
+
+}
+button{
+  background-color: darkgreen;
+  width: 230px;
+  height: 40px;
+  border-radius: 10px;
+}
+del{
+  opacity: 0.4;
+  margin: auto -80px;
+  font-size: 14px;
+}
+ 
+/*mobile devices*/
+@media screen and (max-width : 375px) {
+  .container{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 200px;
+    
+  }
+  img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .content-container{
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px; 
+  }
+}
